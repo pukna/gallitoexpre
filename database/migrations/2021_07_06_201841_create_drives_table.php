@@ -19,7 +19,7 @@ class CreateDrivesTable extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('phone');
-            $table->string('entry_port');
+            $table->string('licenseType');
             $table->timestamps();
         });
     }
