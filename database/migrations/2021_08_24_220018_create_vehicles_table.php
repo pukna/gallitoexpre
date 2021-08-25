@@ -18,7 +18,6 @@ class CreateVehiclesTable extends Migration
             $table->string('plate');
             $table->string('weightsAndMeasures');
             $table->string('enrollment');
-            $table->string('imgVwhicle');
             $table->timestamps();
         });
     }
