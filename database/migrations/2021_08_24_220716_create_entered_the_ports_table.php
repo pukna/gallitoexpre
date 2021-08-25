@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateClientsTable extends Migration
+class CreateEnteredThePortsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,13 @@ class CreateClientsTable extends Migration
      */
     public function up()
     {
-        Schema::create('clients', function (Blueprint $table) {
+        Schema::create('entered_the_ports', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('document');
-            $table->string('name');
-            $table->string('email');
-            $table->string('phone');
+            $table->string('vSeguro');
+            $table->string('tSeguto');
+            $table->string('VEnteretPorts');
+            $table->string('userEnterPort');
+            $table->string('passEnterPort');
             $table->timestamps();
         });
     }
@@ -30,6 +31,6 @@ class CreateClientsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('clients');
+        Schema::dropIfExists('entered_the_ports');
     }
 }
