@@ -65,11 +65,11 @@ Route::post('invoices', 'InvoiceController@store');
 Route::put('invoices/{invoice}', 'InvoiceController@update');
 Route::delete('invoices/{invoice}', 'InvoiceController@delete');
 // veiculos
-Route::get('vihicles', 'VihicleController@index');
-Route::get('vihicles/{vihicle}', 'VihicleController@show');
-Route::post('vihicles', 'VihicleController@store');
-Route::put('vihicles/{vihicle}', 'VihicleController@update');
-Route::delete('vihicles/{vihicle}', 'VihicleController@delete');
+Route::get('vehicles', 'VehicleController@index');
+Route::get('vehicles/{vehicle}', 'VehicleController@show');
+Route::post('vehicles', 'VehicleController@store');
+Route::put('vehicles/{vehicle}', 'VehicleController@update');
+Route::delete('vehicles/{vehicle}', 'VehicleController@delete');
 //imagenes
 //Route::get('clients', 'ClientController@index');
 //Route::get('clients/{client}', 'ClientController@show');

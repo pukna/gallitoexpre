@@ -16,14 +16,10 @@ class CreateFreightreportsTable extends Migration
         Schema::create('freightreports', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('Fecha');
-            $table->string('Socio');
-            $table->string('Conductor');
-            $table->string('N_Carro');
             $table->string('Despachado por');
             $table->string('Quien_paga');
             $table->string('N_Bultos');
             $table->string('Detalles');
-            $table->string('N_Factura');
             $table->string('Cobro_en');
             $table->string('Subtotal');
             $table->string('Flete_total');

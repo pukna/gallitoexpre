@@ -16,7 +16,7 @@ class CreateVehiclesTable extends Migration
         Schema::create('vehicles', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('plate');
-            $table->string('weightsAndMeasures');
+            $table->string('measures');
             $table->string('enrollment');
             $table->timestamps();
         });
